@@ -2,7 +2,7 @@
 <html lang= "en-us"> 
    
 <head>
-    <title>Page Navigation</title>
+    <title>CSS Introduction</title>
     <meta charset="utf-8">
     <meta name= "author" content="Henry Dumbrique">
 
@@ -10,10 +10,49 @@
 
 <body>
     <header>
-
+        <h1>CSS Introduction using Inline styling</h1>
+        <nav>
+            <a href="#">Overview</a>
+            <a href="index-inline.html">Inline</a>
+            <a href="index-embedded.html">Embedded</a>
+            <a href="index-link.html">Link Style Sheet</a>
+        </nav>
     </header>
     <main>
-
+        <section>
+            <h2>CSS coding Styles</h2>
+           <table border="1">
+                <tr>
+                    <td>Browser Defaults</td>
+                    <td width="400px">You have no control over</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Inline</td>
+                    <td>this is for a single specific element (tag) instance</td>
+                    <td>style="rule; [rule;.....] (optionally)"</td>
+                    <td>style="color:red; width:50px;"</td>
+                </tr>
+                <tr>
+                    <td>Embedded</td>
+                    <td>coded in your head area, styling selectors apply to all elements (tags)<br/> that exist on the page, </td>
+                    <td>&lt;style&gt; selector {rule;[rule;....]} [selector{...}] &lt;/style&gt;</td>
+                </tr>
+                <td>&lt;style&gt; h1 {"color:red; <br/>width:50px;"}<br/> p {"background-color:silver;<br/> width:250px;"}&lt;/style&gt;</td>
+                </tr>
+                <tr>
+                    <td>Link</td>
+                    <td>coded in a seperate file, styling selectors apply to all elements (tags) that exist on the page, you must reference the file in your head area using the &lt;Link&gt; tag </td>
+                    <td> selector {rule;[rule;....]} <br/>[selector{...}] </td>
+                </tr>
+                <td>h1 {"color:red; width:50px;"}
+                    <br/> p {"background-color:<br/>silver width:<br/>250px;"}
+                </td>
+                <td></td>
+                </tr>
+           </table>
+        
+       </section>
     </main>
     <footer>
         
