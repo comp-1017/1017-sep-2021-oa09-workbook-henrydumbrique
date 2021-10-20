@@ -36,6 +36,8 @@ section p{
 syntax for name is .user-name{rules}
 you are NOT using element names
 classes can be attached to any elements
+classes are independent of the element
+on html page class-"user-name"[User-name ...]
 */
 .box-text{
     border-top:10px solid blue;
@@ -46,4 +48,8 @@ classes can be attached to any elements
     color:yellow;
 }
 /* id seleector 
+similar to a class selector BUT is suppose to be use only
+on the page where as a class may be use multiple times
+syntax #user-anme{rules}
+on html page id="user-name"
 */
