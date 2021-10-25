@@ -1,0 +1,47 @@
+nav ul{
+    /* if all rgb values are the say ie #dddddd you can use a shortcut
+    of just one hexcharacter #ddd       #333333-> #333*/
+    background-color: #ddd;
+}
+nav ul li{
+    border-bottom:1px solid black;
+}
+nav ul li a{
+    text-decoration: none;
+    color:violet;
+}
+footer{
+    background-color: #333;
+    color: yellow;
+}
+footer,footer a{
+    color: white;
+}
+/*Classes
+types: user ( targetted) class
+        psuedo class, these are attached to elements
+        
+anchor psuedo classes (note order is important when coding for these
+classes 
+a:link used link
+a:hover used when your cursor hovers over the link 
+a:visited used after you have previously visited the link
+a:active used when you are actually clicking the link*/
+
+nav ul li a:hover{
+    color:red;
+    font-weight: bold;
+}
+
+/* targetted class*/
+nav ul.bulletremoval{
+    padding: 0;
+    list-style-type: none; /* this removes the ul bullets */
+}
+
+
+.bulletremoval{
+    padding: 15px;
+    list-style-type: none; /* this removes the ul bullets */
+}
+
