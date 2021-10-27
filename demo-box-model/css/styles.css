@@ -1,0 +1,84 @@
+/* Margins
+
+used to push elements apart from eachother
+outside the border
+top & bottom margins between stacked elements reduce to the higher of the
+        2 specified margins
+
+Assume: element A has a bottom margin of 50px
+        element B has a top margin of 30px
+
+        one might expect the total distance between the elements to be 
+        50+30= 80px
+        however, due to margin-collapse the real distance will only be 
+        50px.
+
+Syntax:
+long form
+margin-top:npx; margin-right:npx;margin-bottom:npx; margin-leftnpx;
+
+shortcuts
+margin: 24px 10px 24px 20px; represents top right bottom left, in order
+margin:24px 10px; top/bottom right/left
+margin 24px; top=right=bottom=left
+margin: 24px 40px 10px  top bottom right/left
+
+create a class for the margin section
+*/
+
+.margin-section{
+    margin: 24px 12px 40px 86px;
+}
+
+/*border
+this seperates the margin from the padding
+it is visible if requested and has a width
+default width is 0
+
+long hand
+border-style:none|soild|dotted|dashed|ridge|double|...etc
+border-width:npx|thin|medium|thick|etc.....
+border-color: red|#....|rgb(#,#,#)|rgba(transparency)
+
+in addition you can affect only one side of the border
+specify bottom, top, right, left
+
+border-style-bottom:_______;
+
+short hand
+border: width style color
+
+create a border class of 5px dashed forestgreen
+*/
+.border-section{
+    border:5px dashed forestgreen;
+}
+
+/* the padding is the area between the border and the content
+think of a parking lot between the car and line; a box with a bubble warp
+
+setup of item is similar to margin except use the world padding
+
+create a class with padding 15px (all sides)*/
+.padding-section{
+    padding: 15px;
+}
+
+/* content width
+physically specifies the number of pixels your context is to have for its
+horizontal display(right to left or left to right)
+height can also be specified BUT you could end up having context truncated(not displayed) because the area requested is not sufficient to show all content due to the width and height. HEight by default automatically expands
+
+create a class to limit:
+width:300px
+margin:10px
+border: medium solid blue
+padding 30px top/bottom 10px right/left
+
+*/
+.width-section{
+    width:300px;
+    margin:10px 10px 50px 300px;
+    border: medium solid blue;
+    padding: 30px 10px ;
+}
