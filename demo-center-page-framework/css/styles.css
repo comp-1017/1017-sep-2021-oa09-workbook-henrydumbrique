@@ -1,0 +1,79 @@
+body{
+    background-color: white;
+}
+
+.container{
+    /*
+    the margin is setting 
+    my top/bottom to 0 
+    right/left to the middle of the browser window-auto
+        takes the width of the container, subtracts from browser window
+        divides the unused area by 2 and sets the right/left margin to 
+        the calculated values
+
+        specify the desired width of your web site page
+        width of 960px ( course requested as its standard)
+        960=lm +lb + lp+ content-width+ rp+ rb+ rm
+    */
+    margin: 0 auto;
+    width: 960px;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* typography */
+
+h1,h2,h3{
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #747474;
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+/*page layout */
+nav{
+    margin-top: 40px ;
+    background-color: #ddd;
+}
+header{
+    background-color: #ddd;
+    height:250px; /* fixed vertical height to similate content */
+    margin-top: 24px;
+
+}
+main{
+    background-color: #ddd;
+    margin-top: 24px;
+    height: 550px;
+}
+footer{
+    height: 150px;
+    background-color: red;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}
+footer h2{
+    color: lime;
+}
+main section{
+    height: 200px;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid black;
+    margin: 20px;
+    /* 20+2+0+w+0+2+20=960 44+w= 960
+    w=960-44=916*/
+    width: 916px;
+}
+
