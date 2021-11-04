@@ -1,0 +1,66 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.5
+}
+/*
+red
+20px+0+0+w+0+0+10px=960
++
+blue
+10+0+0+w+0+0+20
+=(960-60)/2
+
+450
+*/
+
+.red-paint, .blue-paint{
+    width: 450px;
+    height: 300px;
+
+}
+
+.red-paint{
+    background-color: red;
+    margin:20px 10px 20px 20px; /*top right bottom left*/
+}
+.blue-paint{
+    background-color: blue;
+    margin:20px 20px 20px 10px;
+}
+.black-paint{
+    width: 920px;
+    margin:0px 20px 20px 20px ; /* top/bottom and right/left */
+    height: 50px;
+    background-color: black;
+}
+main,footer{
+    background-color: #c0c0c0;
+}
+/*
+    create a flex-container that surrounds all the child elements
+    you want to be displayed in a column fashion ( floating left/right)
+
+    flex the red and blue elements(divs)
+    parent is the next level up -> main
+
+    add the rule display: flex to the element name
+
+    CONCERn : flex will place all child elements on a single row
+    adjusting all widths AUTOMATICALLY
+
+    Solution: retain the width setting and force any overflow
+    on the  horizontal axis (main axis) to go to the next line(row)
+
+    rule flex-wrap: no wrap (default) | wrap|wrap reverse
+*/
+main,footer{
+    display:flex;
+    flex-wrap: wrap ;
+}
