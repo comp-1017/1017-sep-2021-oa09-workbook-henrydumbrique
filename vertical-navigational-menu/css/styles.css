@@ -1,0 +1,64 @@
+body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif; 
+    background-image: url(../img/whitetile.gif);
+}
+
+.container{
+    
+    margin: 0 auto;
+    width: 960px;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* 
+*/
+
+/* typography */
+header{
+    height: 64px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+/*page layout */
+.banner{
+    background-image: url(../img/flowerbackground.gif);
+    height: 420px; /* 460 to 420  */
+    margin-top: 64px;
+}
+.banner h1{
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    color: #f9ea4e;
+}
+
+.banner a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner a:hover,
+.banner a:focus{
+    color: #f9ea4e;
+}
+
+.banner li{
+    list-style-type: none;
+    
+}
+header img{
+    margin: 17px;
+}
+
+.banner{
+    padding-left:680px;
+    padding-top: 60px;
+}
+
+
+.banner li{
+    margin-bottom: 12px;
+}
