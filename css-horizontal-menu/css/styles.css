@@ -1,0 +1,111 @@
+body {
+	background-color: white;
+	font-size: 100%;
+	line-height: 1.5;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+}
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+}
+
+/* font-family: 'Alegreya', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* display: dlex affects the immediate level levels of where the flex
+rule has been set */
+header{
+	background-color: #028568;
+	height: 75px;
+	display: flex;
+}
+
+header img{
+	margin: 10px;
+}
+/* horizontal menu 
+	flex works on the first child level element within the flexed element*/
+
+header nav ul{
+	display: flex;
+	
+}
+
+nav a{
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	color:#f1f7f6;
+
+}
+nav li{
+	margin-right: 30px;
+	font-size: 18px;
+	/* if you need to center text in a box model
+	such as the li tag you can use the rule line-height tag 
+	
+	line height by default has text centered*/
+	line-height: 75px;
+}
+
+nav ul{
+	margin-left: 204px;
+}
+
+nav a:hover,
+nav a:focus{
+	border-bottom: 2px solid #abddd5;
+}
+
+.banner{
+	background-image: url(../img/background.gif);
+	height: 384px;
+	display: flex;
+}
+.leftside{
+	width: 580px;
+}
+/* for transparent colors use rgba(red,green,blue,transparent value) 
+the transparent value is 0.0-1.0
+80% would be 0.8 */
+.rightside{
+	background-color: rgba(117,221,223,0.8);
+	width: 380px;
+}
+/* an anchor tag being simulated as a button
+by default an anchor is NOT a block(box) element
+you cannot use your usual box model positioning
+to simulate the box model ability set for an element for non block element
+you can use the rule display: inline-block 
+
+to round corner on a block use border-radius:npx; 
+the larger the n the larger the rounding */
+.rightside a{
+	font-family: 'Alegreya', serif;
+	display: inline-block;
+	padding: 9px 38px;
+	text-decoration: none;
+	text-align: center;
+	color: #028568;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.rightside a:hover,
+.rightside a:focus{
+	font-weight: bold;
+}
+
+.bar{
+	height: 8px;
+	width: 450px;
+	background-color: rgb(117,221,223);
+	margin-left: 50px;
+}
